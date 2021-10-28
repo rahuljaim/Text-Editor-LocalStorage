@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Notepad</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .formtext {
+            width: 100%;
+            border: 1px solid #999;
+            height: 100%;
+        }
+
+        #heading {
+            background-color: #999;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px 0 10px;
+            height: 30px;
+            margin: 0px;
+        }
+
+        #cl {
+            text-align: right;
+        }
+
+        #textarea {
+            width: 100%;
+            border: none;
+
+        }
+
+        #textarea:active {
+            border: none;
+            overflow: auto;
+            outline: none;
+
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+
+            resize: none;
+            /*remove the resize handle on the bottom right*/
+        }
+    </style>
+
+</head>
+
+<body onload="load()">
+    <div class="formtext">
+        <div id="heading">
+            <div>
+                <p>Online Notepad</p>
+            </div>
+            <div><label for="feature-flag" id="cl">Save My Notes</label>
+                <input type="checkbox" onclick="save()" name="feature-flag" id="feature-flag" />
+            </div>
+
+        </div>
+        <form action="">
+            <textarea name="" id="textarea" cols="50" rows="10" placeholder="Write your notes here"></textarea>
+        </form>
+    </div>
+    <script>
+        let savenote = document.querySelector('#feature-flag');
+        let textar = document.querySelector('#textarea');
+        function load() {
+            if (localStorage.getItem("textar")) {
+                textar.value = localStorage.getItem("textar");
+            }
+        }
+        function save() {
+            if (savenote.checked) {
+                localStorage.setItem("textar", textar.value);
+            }
+        }
+    </script>
+
+</body>
+
+</html>

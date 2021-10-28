@@ -1,0 +1,105 @@
+export const asideProfile = 
+[
+    {
+    "section-title": "Stephen Colbert",
+    "sub-title": "Designer",
+    "contents": [{
+            "data": "21 sstreet texas",
+            "icon": "envelop"
+        },
+        {
+            "data": "+91892378237",
+            "icon": "mobile"
+        },
+        {
+            "data": "21 sstreet texas",
+            "icon": "envelop"
+        }
+    ]
+},
+
+{
+    "section-title": "Skills",
+    "sub-title": null,
+    "contents": [{
+            "data": "HTML",
+            "icon": null,
+            "progress": 58
+        },
+        {
+            "data": "CSS",
+            "icon": null,
+            "progress": 77
+        },
+        {
+            "data": "Java",
+            "icon": null,
+            "progress": 87
+        }
+
+    ]
+},
+
+{
+    "section-title": "Social",
+    "sub-title": null,
+    "contents": [{
+            "data": "Facebook",
+            "icon": "facebook",
+            "link": "http://facebook.com"
+        },
+        {
+            "data": "Twitter",
+            "icon": "twitter",
+            "link": "http://twitter.com"
+        },
+        {
+            "data": "Youtube",
+            "icon": "youtube",
+            "link": "http://youtube.com"
+        }
+
+    ]
+},
+{
+    "main-title": "About Us",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ea quidem rerum pariatur debitis corrupti repellendus veniam delectus, facilis odio fugiat hic. Nesciunt error maxime perferendis! Necessitatibus excepturi corrupti ipsum."
+},
+{
+    "main-title": "Work Experience",
+    "content": [{
+            "year": "2013-2015",
+            "ins-com": "Lorem ipsum dolor sit amet.",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ea quidem"
+        },
+        {
+            "year": "2015-2017",
+            "ins-com": "Lorem ipsum dolor sit amet.",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ea quidem"
+        },
+        {
+            "year": "2017-Present",
+            "ins-com": "Lorem ipsum dolor sit amet.",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ea quidem"
+        }
+
+    ]
+
+},
+{
+    "main-title": "Work Experience",
+    "content": [{
+            "year": "2013-2015",
+            "ins-com": "Web Designing (Texas University)",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ea quidem"
+        },
+        {
+            "year": "2015-2017",
+            "ins-com": "Texas International Institute",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ea quidem"
+        }
+
+    ]
+
+}
+]
